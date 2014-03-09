@@ -95,7 +95,7 @@ define(function(require, exports, module) {
     function parse_path( input ) {
       var input = input.trim(),
           delim = '/',
-          heading_marker = ';',
+          heading_marker = ']',
           ancestors_off = '>',
           ancestors,
           descendants
