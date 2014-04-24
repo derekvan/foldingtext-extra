@@ -91,17 +91,7 @@ define(function(require, exports, module) {
       s = insertOps( s, defaultOp );
     }
 
-<<<<<<< HEAD
-    function parse_path( input ) {
-      var input = input.trim(),
-          delim = '/',
-          heading_marker = ']',
-          ancestors_off = '>',
-          ancestors,
-          descendants
-=======
     // TODO pull out property queries first
->>>>>>> upstream/master
     
     // allow paths to contain "union" "intersect" "except"; by wrapping in quotes
     // TODO maybe should allow these as functions instead?
@@ -123,7 +113,7 @@ define(function(require, exports, module) {
   function parsePath( input ) {
     var input = input.trim(),
         delim = '/',
-        heading_marker = ';',
+        heading_marker = 'l',
         ancestors_off = '*', // can be at start or end
         ancestors,
         descendants
