@@ -10,11 +10,11 @@
  *  Variables
  * ************************************************************** */
 
-@font: Seravek, 'Source Sans Pro', Consolas, 'Courier Prime', Courier; // Seravek is on OS X 10.9
+@fontFamily: 'Source Sans Pro', Consolas, 'Courier Prime', Courier; // Seravek is on OS X 10.9
 @lineHeight: 1.25;
-@tabSize: '8';
+@tabSize: 8;
 @selectionLeftFillTo: margin;
-@deskColor: #FEFCF6;
+@deskColor: #f2f2f2;
 @paperColor: @deskColor;
 
 /* ************************************************************** *
@@ -23,8 +23,8 @@
 
 body {
     -webkit-font-smoothing: subpixel-antialiased !important;
-    text-rendering: optimizeSpeed;
-    font-size: 1.05em;
+    // text-rendering: optimizeSpeed; // this set in FoldingText default
+    font-size: 1.35em;
 }
 
 .line-select-position {
@@ -72,16 +72,26 @@ body {
 
 .CodeMirror {
     .cm-heading[cm-level="1"] {
-        font-size: 1.4em;
-        text-indent: -15.9pt !important;
+        font-size: 1.5em;
+        // text-indent: -15.9pt !important;
     }
     .cm-heading[cm-level="2"] {
-        font-size: 1.1em;
-        text-indent: -21pt !important;
+        font-size: 1.4em;
+        // text-indent: -21pt !important;
     }
 }
 .cm-mode {
     font-weight: normal;
+}
+
+.CodeMirror {
+    .cm-todo-modecontext {
+        color:gray;
+    }
+    .cm-todo-mode,
+    .cm-todo-modecontext.cm-unordered {
+        color:@textColor;
+    }
 }
 
 /* == Properties =================================================== */
