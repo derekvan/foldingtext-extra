@@ -10,12 +10,26 @@
  *  Variables
  * ************************************************************** */
 
+<<<<<<< HEAD
 @fontFamily: 'Source Sans Pro', Consolas, 'Courier Prime', Courier; // Seravek is on OS X 10.9
+=======
+@fontFamily: Seravek, 'Source Sans Pro', Consolas, 'Courier Prime', Courier; // Seravek is on OS X 10.9
+>>>>>>> upstream/master
 @lineHeight: 1.25;
 @tabSize: 8;
 @selectionLeftFillTo: margin;
 @deskColor: #f2f2f2;
 @paperColor: @deskColor;
+@paperTopMargin:    4rem;
+@paperRightMargin:  4rem;
+@paperLeftMargin:   4rem;
+
+@interfaceColor: #5A88C7;
+@cursorColor: @interfaceColor;
+// @paperBottomMargin: 4rem;
+
+// @selectionBackgroundColor
+// @focusedSelectionBackgroundColor
 
 /* ************************************************************** *
  *  General
@@ -24,17 +38,20 @@
 body {
     -webkit-font-smoothing: subpixel-antialiased !important;
     // text-rendering: optimizeSpeed; // this set in FoldingText default
+<<<<<<< HEAD
     font-size: 1.35em;
+=======
+    font-size: 1.05em;
+>>>>>>> upstream/master
 }
 
 .line-select-position {
     margin-top: -3px;
 }
 
-.CodeMirror div.CodeMirror-cursor,
 .CodeMirror div.CodeMirror-textDropCursor { // textDropCursor is used when insteting
                                             // dragged text
-    border-left: 2px solid #5A88C7;
+    border-color: #333;
     // .line-select-position;
 }
 .CodeMirror div.CodeMirror-textDropCursor {
@@ -59,10 +76,10 @@ body {
     .cm-fencedcodestart,
     .cm-fencedcode,
     .cm-fencedcodeend {
-        font-family: Consolas, Menlo, monospace;
+      font-family: Consolas, Menlo, monospace;
     }
     .cm-code {
-        background: rgba(0, 0, 0, 0.08);
+      background: rgba(0, 0, 0, 0.08);
     }
 }
 
@@ -72,11 +89,19 @@ body {
 
 .CodeMirror {
     .cm-heading[cm-level="1"] {
+<<<<<<< HEAD
         font-size: 1.5em;
         // text-indent: -15.9pt !important;
     }
     .cm-heading[cm-level="2"] {
         font-size: 1.4em;
+=======
+        font-size: 1.4em;
+        // text-indent: -15.9pt !important;
+    }
+    .cm-heading[cm-level="2"] {
+        font-size: 1.1em;
+>>>>>>> upstream/master
         // text-indent: -21pt !important;
     }
 }
